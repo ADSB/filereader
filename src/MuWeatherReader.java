@@ -71,12 +71,12 @@ public class MuWeatherReader {
 				}
 				case 1: {
 					CityData city = rainfall.get(0);
-					output = "Min: " + city.getData().get(0) + " - " + city.getName();
+					output = "Min: " + city.getData().get(selection) + " - " + city.getName();
 					break;
 				}
 				case 2: {
 					CityData city = rainfall.get(rainfall.size() - 1);
-					output = "Max: " + city.getData().get(city.getData().size() - 1) + " - " + city.getName();
+					output = "Max: " + city.getData().get(selection) + " - " + city.getName();
 					break;
 				}
 				case 3: {
